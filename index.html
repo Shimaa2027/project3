@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Homes | البيوت الذكية الحديثة</title>
+    <link rel="icon" href="images/logo.jpg">
+    <!-- Bootstrap CSS grid -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light-theme">
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="custom-nav fixed-top py-2 shadow-sm">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a class="logo-brand fw-bold fs-4 text-decoration-none text-white" href="#">
+                    <i class="fa-solid fa-house-signal me-2"></i> Smart Homes
+                </a>
+
+                <ul class="nav-links d-none d-lg-flex gap-4 m-0 p-0 list-unstyled">
+                    <li><a class="nav-link-custom fw-bold text-decoration-none text-white" href="#hero">الرئيسية</a></li>
+                    <li><a class="nav-link-custom fw-bold text-decoration-none text-white" href="#villas">معرض الفلل</a></li>
+                    <li><a class="nav-link-custom fw-bold text-decoration-none text-white" href="#accordion">عن التقنية</a></li>
+                    <li><a class="nav-link-custom fw-bold text-decoration-none text-white" href="#team">فريق العمل</a></li>
+                    <li><a class="nav-link-custom fw-bold text-decoration-none text-white" href="#articles">أحدث المقالات</a></li>
+                    <li><a class="nav-link-custom fw-bold text-decoration-none text-white" href="#contact">تواصل معنا</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-2">
+                    <div class="search-box position-relative">
+                        <input type="text" class="form-control form-control-sm visible-search-input pe-4" placeholder="بحث...">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+                    
+                    <a href="#guestModal" class="btn btn-light btn-sm fw-bold text-cyan px-3">الضيف</a>
+                    <a href="#loginModal" class="btn btn-outline-light btn-sm fw-bold px-3">تسجيل الدخول</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- CSS Modals -->
+        <div id="loginModal" class="css-modal">
+            <div class="css-modal-content">
+                <div class="modal-header-cyan">
+                    <h5 class="fw-bold m-0">تسجيل الدخول</h5>
+                    <a href="#" class="css-modal-close">&times;</a>
+                </div>
+                <div class="modal-body-custom p-4">
+                    <form action="#" method="get">
+                        <div class="mb-3 text-start">
+                            <label class="form-label text-dark fw-bold small mb-1">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" placeholder="example@domain.com" required>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label class="form-label text-dark fw-bold small mb-1">كلمة المرور</label>
+                            <input type="password" class="form-control" placeholder="********" required>
+                        </div>
+                        <button type="submit" class="btn btn-cyan-full w-100 py-2 fw-bold text-white mb-2">تسجيل الدخول</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay">
+            <div class="content text-center w-100 px-3">
+                <h1 class="text-white fw-bold display-3 text-shadow-sharp">البيوت الحديثة والذكية</h1>
+                <p class="text-white fs-4 fw-bold text-shadow-sharp">عش تجربة الرفاهية الكاملة وتعرف على أحدث تكنولوجيا المعيشة المستقبلية!</p>
+                <a href="#villas" class="btn btn-cyan-soft btn-lg mt-3 px-5 fw-bold text-white shadow-lg text-decoration-none">استكشف مشاريعنا</a>
+            </div>
+
+            <div class="info-sidebar-right">
+                <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn"><i class="fa-solid fa-at"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: معرض الفلل (ضبط الحواف والكيرف المتبادل) -->
+    <section class="py-5 bg-white" id="villas">
+        <div class="container text-center">
+            <div class="my-4">
+                <h2 class="section-title text-center text-dark">معرض الفلل الفخمة</h2>
+            </div>
+
+            <!-- CSS Slider (بدون زوم وعلى قد الحواف) -->
+            <div class="css-slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+
+                <div class="slides">
+                    <div class="slide"><img src="images/1.jpeg" alt="معمار مودرن"></div>
+                    <div class="slide"><img src="images/2.jpeg" alt="زجاج ذكي"></div>
+                    <div class="slide"><img src="images/3.jpeg" alt="تصميم داخلي"></div>
+                </div>
+
+                <div class="slider-controls">
+                    <div class="controls-slide1">
+                        <label for="slide3" class="nav-arrow prev"><i class="fa-solid fa-chevron-right"></i></label>
+                        <label for="slide2" class="nav-arrow next"><i class="fa-solid fa-chevron-left"></i></label>
+                    </div>
+                    <div class="controls-slide2">
+                        <label for="slide1" class="nav-arrow prev"><i class="fa-solid fa-chevron-right"></i></label>
+                        <label for="slide3" class="nav-arrow next"><i class="fa-solid fa-chevron-left"></i></label>
+                    </div>
+                    <div class="controls-slide3">
+                        <label for="slide2" class="nav-arrow prev"><i class="fa-solid fa-chevron-right"></i></label>
+                        <label for="slide1" class="nav-arrow next"><i class="fa-solid fa-chevron-left"></i></label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الكروت مع التفاعل والعكس عند Hover -->
+            <div class="row g-4 mt-5">
+                <div class="col-12 col-md-4">
+                    <div class="card smart-card curve-card-1 shadow-sm">
+                        <img src="images/4.jpeg" class="fit-image-exact" alt="فيلا الأتمتة">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center p-3">
+                            <h4 class="card-title text-white fw-bold">فيلا الأتمتة</h4>
+                            <a href="#" class="btn btn-cyan-soft btn-sm text-white fw-bold px-4 text-decoration-none">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card smart-card curve-card-2 shadow-sm">
+                        <img src="images/5.jpeg" class="fit-image-exact" alt="البيت الأخضر الذكي">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center p-3">
+                            <h4 class="card-title text-white fw-bold">البيت الأخضر الذكي</h4>
+                            <a href="#" class="btn btn-cyan-soft btn-sm text-white fw-bold px-4 text-decoration-none">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card smart-card curve-card-1 shadow-sm">
+                        <img src="images/6.jpeg" class="fit-image-exact" alt="القصر التكنولوجي">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center p-3">
+                            <h4 class="card-title text-white fw-bold">القصر التكنولوجي</h4>
+                            <a href="#" class="btn btn-cyan-soft btn-sm text-white fw-bold px-4 text-decoration-none">تفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: عن التقنية -->
+    <section class="section-tech py-5" id="accordion">
+        <div class="tech-overlay py-5">
+            <div class="container my-auto">
+                <div class="css-accordion-matched">
+                    <div class="accordion-tab-matched">
+                        <input type="radio" id="acc1" name="accordion-group" checked>
+                        <label for="acc1" class="accordion-title-matched">
+                            <span>Accordion Item #1</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </label>
+                        <div class="accordion-content-matched">
+                            <p>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-tab-matched">
+                        <input type="radio" id="acc2" name="accordion-group">
+                        <label for="acc2" class="accordion-title-matched">
+                            <span>Accordion Item #2</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </label>
+                        <div class="accordion-content-matched">
+                            <p>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-tab-matched">
+                        <input type="radio" id="acc3" name="accordion-group">
+                        <label for="acc3" class="accordion-title-matched">
+                            <span>Accordion Item #3</span>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </label>
+                        <div class="accordion-content-matched">
+                            <p>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: فريق العمل (تنزيل الدائرة للأسفل لعدم تغطية الوجوه) -->
+    <section class="py-5 bg-light-theme" id="team">
+        <div class="container text-center">
+            <div class="mb-5">
+                <h2 class="section-title text-center text-dark">ملاك القصور الفخمة</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="custom-profile-card">
+                        <div class="card-bg-img" style="background-image: url('images/8.jpeg');"></div>
+                        <div class="card-content-overlay">
+                            <div class="avatar-circle avatar-lowered mb-2">
+                                <img src="images/8.jpeg" alt="ماركوس">
+                            </div>
+                            <h5 class="fw-bold text-white mb-1">م. ماركوس</h5>
+                            <p class="text-info small mb-1">مدير تجربة المستخدم</p>
+                            <p class="text-white-50 extra-small m-0">12 أكتوبر 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="custom-profile-card">
+                        <div class="card-bg-img" style="background-image: url('images/9.jpeg');"></div>
+                        <div class="card-content-overlay">
+                            <div class="avatar-circle avatar-lowered mb-2">
+                                <img src="images/9.jpeg" alt="مصطفى محمود">
+                            </div>
+                            <h5 class="fw-bold text-white mb-1">م. مصطفى محمود</h5>
+                            <p class="text-info small mb-1">م. تطوير الويب</p>
+                            <p class="text-white-50 extra-small m-0">12 أكتوبر 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="custom-profile-card">
+                        <div class="card-bg-img" style="background-image: url('images/10.jpeg');"></div>
+                        <div class="card-content-overlay">
+                            <div class="avatar-circle avatar-lowered mb-2">
+                                <img src="images/10.jpeg" alt="جون">
+                            </div>
+                            <h5 class="fw-bold text-white mb-1">م. جون</h5>
+                            <p class="text-info small mb-1">مدير تجربة المستخدم</p>
+                            <p class="text-white-50 extra-small m-0">12 أكتوبر 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: أحدث المقالات (الشريط الأزرق من ناحية الصور - اليسار) -->
+    <section class="py-5 bg-white" id="articles">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-center text-dark">أحدث المقالات</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- كارت 1 -->
+                <div class="col-12 col-lg-10">
+                    <div class="card article-exact-card shadow-sm border-0">
+                        <div class="card-blue-line-left"></div>
+                        <div class="article-exact-body p-4">
+                            <div class="article-text-side">
+                                <h4 class="fw-bold text-dark mb-1">اكتشف سحر العمارة</h4>
+                                <p class="text-muted extra-small mb-3"><i class="fa-regular fa-clock me-1"></i> منذ يومين</p>
+                                <p class="text-secondary small mb-4">البيت والمشروع الأكبر وأبرز التقنيات المعمارية التي توفر أحدث راحة ممكنة للسكان، وتغطية بكافة الاستخدامات الحديثة.</p>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-cyan-soft btn-sm text-white fw-bold px-3">شاهد الآن</button>
+                                    <button class="btn btn-secondary btn-sm fw-bold px-3">تفاصيل</button>
+                                    <button class="btn btn-dark btn-sm fw-bold px-3">بودكاست</button>
+                                </div>
+                            </div>
+                            <div class="article-img-side">
+                                <img src="images/7.jpeg" alt="اكتشف سحر العمارة">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كارت 2 -->
+                <div class="col-12 col-lg-10">
+                    <div class="card article-exact-card shadow-sm border-0">
+                        <div class="card-blue-line-left"></div>
+                        <div class="article-exact-body p-4">
+                            <div class="article-text-side">
+                                <h4 class="fw-bold text-dark mb-1">أسرار الأهرامات</h4>
+                                <p class="text-muted extra-small mb-3"><i class="fa-regular fa-clock me-1"></i> منذ 5 أيام</p>
+                                <p class="text-secondary small mb-4">رحلة معمارية وتاريخية عبر أحدث الأساليب والتصاميم الهندسية المبتكرة في البناء والتشييد المستدام.</p>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-cyan-soft btn-sm text-white fw-bold px-3">شاهد الآن</button>
+                                    <button class="btn btn-secondary btn-sm fw-bold px-3">تفاصيل</button>
+                                </div>
+                            </div>
+                            <div class="article-img-side">
+                                <img src="images/12.jpeg" alt="أسرار الأهرامات">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: تواصل معنا -->
+    <section class="py-5 bg-light-theme border-top" id="contact">
+        <div class="container text-center">
+            <div class="mb-4">
+                <h2 class="section-title text-center text-dark">تواصل معنا</h2>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3 my-3">
+                <a href="#" class="contact-pill-btn shadow-sm text-decoration-none">
+                    <i class="fa-brands fa-twitter fs-5 text-info"></i>
+                    <span>تابعنا على تويتر</span>
+                </a>
+                <a href="#" class="contact-pill-btn shadow-sm text-decoration-none">
+                    <i class="fa-brands fa-whatsapp fs-5 text-success"></i>
+                    <span>راسلنا على واتساب</span>
+                </a>
+                <a href="#" class="contact-pill-btn shadow-sm text-decoration-none">
+                    <i class="fa-brands fa-tiktok fs-5 text-dark"></i>
+                    <span>تابعنا على تيك توك</span>
+                </a>
+                <a href="#" class="contact-pill-btn shadow-sm text-decoration-none">
+                    <i class="fa-brands fa-instagram fs-5 text-danger"></i>
+                    <span>تابعنا على انستغرام</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="smart-footer py-4 text-white text-center">
+        <div class="container">
+            <p class="mb-0 small text-white-50">جميع الحقوق محفوظة &copy; 2026 - Smart Homes</p>
+        </div>
+    </footer>
+
+</body>
+</html>
